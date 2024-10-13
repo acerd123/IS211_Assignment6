@@ -23,16 +23,19 @@ class ConversionsTest(unittest.TestCase):
     def test_convertCelsiusToFahrenheit(self):
         fahrenheit = convertCelsiusToFahrenheit(300)
         expected = 572.0
+        print(f"DEBUG: {fahrenheit}°F for 300°C")
         self.assertAlmostEqual(fahrenheit, expected, 2)
 
     def test_convertCelsiusToFahrenheit_zero(self):
         fahrenheit = convertCelsiusToFahrenheit(0)
         expected = 32.0
+        print(f"DEBUG: {fahrenheit}°F for 0°C")
         self.assertAlmostEqual(fahrenheit, expected, 2)
 
     def test_convertCelsiusToFahrenheit_negative(self):
         fahrenheit = convertCelsiusToFahrenheit(-40)
         expected = -40.0
+        print(f"DEBUG: {fahrenheit}°F for -40°C")
         self.assertAlmostEqual(fahrenheit, expected, 2)
 
 
